@@ -16,7 +16,9 @@
 #include <stdint.h>
 #include <sys/types.h>
 #include <netlink/netlink-compat.h>
-#include <netlink/netlink-kernel.h>
+
+/* We can use bionic's <linux/netlink.h>. */
+#include <linux/netlink.h>
 
 #ifdef __cplusplus
 extern "C" {
